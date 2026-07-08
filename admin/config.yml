@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: bulut-s-projects1/balatcik-veteriner-klinigi
+  repo: ufukbulut087-svg/balatcik-veteriner-klinigi
   branch: main
   base_url: https://balatcik-veteriner-klinigi.vercel.app
   auth_endpoint: api/auth
