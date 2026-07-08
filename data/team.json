@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Tansu Karataş",
+    "role": "Uzman Veteriner Hekim / Akupunktur Uzmanı",
+    "photo": "assets/team-tansu.png",
+    "bio": "Akupunktur alanında uzmanlaşmış, evcil hayvanların yaşam kalitesini artırmak için alternatif tedavi yöntemlerini uygulayan deneyimli veteriner hekim."
+  },
+  {
+    "name": "Ece Tenlik",
+    "role": "Veteriner Teknikeri",
+    "photo": "assets/team-ece.png",
+    "bio": "Hasta bakımından tedavi süreçlerine kadar her aşamada titizlikle görev alan, hayvan sağlığı ve refahını ön planda tutan veteriner teknikeri."
+  }
+]

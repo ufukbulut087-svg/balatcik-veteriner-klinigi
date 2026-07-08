@@ -1,0 +1,26 @@
+[
+  {
+    "question": "Kliniğiniz hangi saatlerde açık?",
+    "answer": "Pazartesi - Pazar 10:00 - 22:00 saatleri arasında hizmet vermekteyiz."
+  },
+  {
+    "question": "Randevu almadan gelebilir miyim?",
+    "answer": "Acil durumlar dışında randevu almanızı öneririz. Böylece bekleme süreniz minimuma iner."
+  },
+  {
+    "question": "Akupunktur tedavisi hangi hayvanlara uygulanır?",
+    "answer": "Akupunktur tedavimiz köpek, kedi ve tavşanlara uygulanabilmektedir. Özellikle kronik ağrı, kas-iskelet problemleri ve yaşlılığa bağlı rahatsızlıklarda etkili sonuçlar alınmaktadır."
+  },
+  {
+    "question": "Otel hizmetiniz nasıl işliyor?",
+    "answer": "Evcil hayvanlarınız için konforlu ve güvenli bir ortam sağlıyoruz. Günlük beslenme, bakım ve oyun aktiviteleri dahildir."
+  },
+  {
+    "question": "Hangi ödeme yöntemlerini kabul ediyorsunuz?",
+    "answer": "Nakit, kredi kartı ve banka kartı ile ödeme kabul etmekteyiz."
+  },
+  {
+    "question": "Acil durumlarda ne yapmalıyım?",
+    "answer": "Acil durumlarda 0540 302 31 07 numaralı telefonumuzu arayabilirsiniz. Çalışma saatleri içinde en kısa sürede müdahale ediyoruz."
+  }
+]

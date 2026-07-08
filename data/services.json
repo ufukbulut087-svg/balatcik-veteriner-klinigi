@@ -1,0 +1,39 @@
+[
+  {
+    "id": "surgery",
+    "icon": "surgery",
+    "title": "Cerrahi Operasyonlar",
+    "description": "Deneyimli ekibimizle güvenli cerrahi müdahaleler"
+  },
+  {
+    "id": "internal",
+    "icon": "internal",
+    "title": "Dahiliye Uzmanlığı",
+    "description": "İç hastalıkların teşhis ve tedavisi"
+  },
+  {
+    "id": "laboratory",
+    "icon": "laboratory",
+    "title": "Laboratuvar Hizmeti",
+    "description": "Kapsamlı kan tahlili ve tanı testleri"
+  },
+  {
+    "id": "hotel",
+    "icon": "hotel",
+    "title": "Otel Hizmeti",
+    "description": "Konforlu ve güvenli evcil hayvan oteli"
+  },
+  {
+    "id": "haircut",
+    "icon": "haircut",
+    "title": "Pet Kuaför",
+    "description": "Profesyonel bakım ve tıraş hizmetleri"
+  },
+  {
+    "id": "acupuncture",
+    "icon": "acupuncture",
+    "title": "Akupunktur & Beslenme",
+    "description": "Alternatif tıp ve beslenme danışmanlığı",
+    "detailsLink": "#akupunkturModal"
+  }
+]

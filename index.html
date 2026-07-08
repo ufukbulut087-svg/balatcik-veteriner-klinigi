@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Balatçık Veteriner Kliniği - İzmir Çiğli'de profesyonel veteriner hizmetleri. Akupunktur, cerrahi, dahiliye, laboratuvar, pet kuaför ve otel hizmeti.">
+    <meta name="keywords" content="veteriner, İzmir, Çiğli, Balatçık, akupunktur, hayvan hastanesi, pet kuaför, veteriner kliniği">
+    <meta name="author" content="Balatçık Veteriner Kliniği">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Balatçık Veteriner Kliniği - İzmir Çiğli">
+    <meta property="og:description" content="Evcil dostlarınıza profesyonel veteriner bakımı. Akupunktur ve modern tıp bir arada.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="logo.jpeg">
+    <link rel="icon" type="image/jpeg" href="logo.jpeg">
+    <title>Balatçık Veteriner Kliniği | İzmir Çiğli - Profesyonel Veteriner Hizmetleri</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ═══════════════════════════════════════ -->
+    <!-- TOPBAR                                  -->
+    <!-- ═══════════════════════════════════════ -->
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <div class="topbar-left">
+                <span class="topbar-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    Pazartesi - Pazar 10:00 - 22:00
+                </span>
+            </div>
+            <div class="topbar-right">
+                <a href="tel:+905403023107" class="topbar-item topbar-phone">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    0540 302 31 07
+                </a>
+                <a href="https://www.instagram.com/balatcikveteriner" target="_blank" rel="noopener" class="topbar-item topbar-social">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    @balatcikveteriner
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- NAVBAR                                  -->
+    <!-- ═══════════════════════════════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-inner">
+            <a href="#" class="navbar-brand">
+                <img src="logo.jpeg" alt="Balatçık Veteriner Kliniği Logo" class="navbar-logo">
+                <span class="navbar-brand-text">Balatçık Veteriner</span>
+            </a>
+            <ul class="navbar-menu" id="navMenu">
+                <li><a href="#anasayfa" class="nav-link active">Ana Sayfa</a></li>
+                <li><a href="#hizmetler" class="nav-link">Hizmetler</a></li>
+                <li><a href="#hakkimizda" class="nav-link">Hakkımızda</a></li>
+                <li><a href="#ekibimiz" class="nav-link">Ekibimiz</a></li>
+                <li><a href="#galeri" class="nav-link">Galeri</a></li>
+                <li><a href="#sss" class="nav-link">SSS</a></li>
+                <li><a href="#iletisim" class="nav-link">İletişim</a></li>
+            </ul>
+            <a href="#" class="btn btn-primary navbar-cta" id="navRandevuBtn">Randevu Al</a>
+            <button class="hamburger" id="hamburger" aria-label="Menüyü aç">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <img src="logo.jpeg" alt="Logo" class="mobile-menu-logo">
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Menüyü kapat">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+        </div>
+        <ul class="mobile-menu-links">
+            <li><a href="#anasayfa">Ana Sayfa</a></li>
+            <li><a href="#hizmetler">Hizmetler</a></li>
+            <li><a href="#hakkimizda">Hakkımızda</a></li>
+            <li><a href="#ekibimiz">Ekibimiz</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#sss">SSS</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+        <a href="#" class="btn btn-primary mobile-menu-cta" id="mobileRandevuBtn">Randevu Al</a>
+        <div class="mobile-menu-contact">
+            <a href="tel:+905403023107">📞 0540 302 31 07</a>
+            <p>🕐 Pazartesi - Pazar 10:00 - 22:00</p>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- HERO SECTION                            -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="hero" id="anasayfa">
+        <div class="container hero-inner">
+            <div class="hero-text-col">
+                <div class="hero-badge fade-in">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    İzmir Çiğli'nin Güvenilir Veteriner Kliniği
+                </div>
+                <h1 class="hero-title fade-in">
+                    Evcil Dostlarınıza<br><span class="hero-highlight">Profesyonel Veteriner Bakımı</span>
+                </h1>
+                <p class="hero-subtitle fade-in">
+                    Balatçık Veteriner Kliniği olarak, şefkat ve uzmanlıkla evcil hayvanlarınızın sağlığını koruyoruz. Akupunktur ve modern tıp bir arada.
+                </p>
+                <div class="hero-buttons fade-in">
+                    <a href="#" class="btn btn-primary btn-lg" id="heroRandevuBtn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        Randevu Al
+                    </a>
+                    <a href="#hizmetler" class="btn btn-outline btn-lg">
+                        Hizmetlerimiz
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-img-col fade-in">
+                <div class="hero-img-wrapper">
+                    <img src="assets/hero-bg.png" alt="Veteriner Hekimlerimiz ve Kedimiz" class="hero-main-img">
+                    <div class="hero-img-accent"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Aşağı Kaydır</span>
+        </div>
+        <div class="hero-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item fade-in">
+                        <span class="stat-number" data-target="6">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Hizmet</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item fade-in">
+                        <span class="stat-icon">🕐</span>
+                        <span class="stat-label">7/24 Destek</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item fade-in">
+                        <span class="stat-number" data-target="1000">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Mutlu Hayvan</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item fade-in">
+                        <span class="stat-number" data-target="1">0</span><span class="stat-suffix"></span>
+                        <span class="stat-label">Uzman Hekim</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item fade-in">
+                        <span class="stat-number" data-target="1">0</span><span class="stat-suffix"></span>
+                        <span class="stat-label">Vet. Teknikeri</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- HİZMETLER (SERVICES)                    -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="section services" id="hizmetler">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Hizmetlerimiz</span>
+                <h2 class="section-title">Kapsamlı Veteriner Hizmetleri</h2>
+                <p class="section-subtitle">Evcil dostlarınız için en iyi bakımı sunuyoruz</p>
+                <div class="section-line"></div>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card fade-in">
+                    <div class="service-accent"></div>
+                    <div class="service-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </div>
+                    <h3 class="service-title">Cerrahi Operasyonlar</h3>
+                    <p class="service-desc">Deneyimli ekibimizle güvenli cerrahi müdahaleler</p>
+                    <a href="#iletisim" class="service-link">
+                        Detay
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card fade-in">
+                    <div class="service-accent"></div>
+                    <div class="service-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    </div>
+                    <h3 class="service-title">Dahiliye Uzmanlığı</h3>
+                    <p class="service-desc">İç hastalıkların teşhis ve tedavisi</p>
+                    <a href="#iletisim" class="service-link">
+                        Detay
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card fade-in">
+                    <div class="service-accent"></div>
+                    <div class="service-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                    </div>
+                    <h3 class="service-title">Laboratuvar Hizmeti</h3>
+                    <p class="service-desc">Kapsamlı kan tahlili ve tanı testleri</p>
+                    <a href="#iletisim" class="service-link">
+                        Detay
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card fade-in">
+                    <div class="service-accent"></div>
+                    <div class="service-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+                    </div>
+                    <h3 class="service-title">Otel Hizmeti</h3>
+                    <p class="service-desc">Konforlu ve güvenli evcil hayvan oteli</p>
+                    <a href="#iletisim" class="service-link">
+                        Detay
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                </div>
+                <!-- Service 5 -->
+                <div class="service-card fade-in">
+                    <div class="service-accent"></div>
+                    <div class="service-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12L12 12"/><path d="M20 4L8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8L20 20"/></svg>
+                    </div>
+                    <h3 class="service-title">Pet Kuaför</h3>
+                    <p class="service-desc">Profesyonel bakım ve tıraş hizmetleri</p>
+                    <a href="#iletisim" class="service-link">
+                        Detay
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                </div>
+                <!-- Service 6 -->
+                <div class="service-card fade-in">
+                    <div class="service-accent"></div>
+                    <div class="service-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 1 5 5c0 2-1.5 3.5-3 4.5V13a2 2 0 0 1-4 0v-1.5C8.5 10.5 7 9 7 7a5 5 0 0 1 5-5z"/><path d="M10 15v2a2 2 0 0 0 4 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="8" y1="22" x2="16" y2="22"/></svg>
+                    </div>
+                    <h3 class="service-title">Akupunktur & Beslenme</h3>
+                    <p class="service-desc">Alternatif tıp ve beslenme danışmanlığı</p>
+                    <a href="#akupunkturModal" class="service-link" id="akupunkturDetayBtn">
+                        Detay
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- HAKKIMIZDA (ABOUT)                      -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="section about" id="hakkimizda">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image fade-in">
+                    <div class="about-image-wrapper">
+                        <img src="assets/about-clinic.png" alt="Balatçık Veteriner Kliniği Hakkında" loading="lazy">
+                        <div class="about-image-accent"></div>
+                    </div>
+                    <div class="about-experience-badge">
+                        <span class="badge-icon">🐾</span>
+                        <span class="badge-text">Şefkat &<br>Uzmanlık</span>
+                    </div>
+                </div>
+                <div class="about-content fade-in">
+                    <span class="section-tag">Hakkımızda</span>
+                    <h2 class="section-title text-left">Biz Kimiz?</h2>
+
+                    <div class="about-mission-vision" style="margin-bottom: 28px; display: flex; flex-direction: column; gap: 20px;">
+                        <div class="about-mv-item">
+                            <h4 style="font-family: var(--font-heading); color: var(--primary-dark); font-size: 1.05rem; font-weight: 700; margin-bottom: 6px; display: flex; align-items: center; gap: 8px;">
+                                <span>🎯</span> Misyonumuz
+                            </h4>
+                            <p class="about-text" style="margin-bottom: 0; font-size: 0.9rem; line-height: 1.7; padding-left: 4px;">
+                                Balatçık Veteriner Kliniği olarak misyonumuz; uzman veteriner hekimimiz ve deneyimli veteriner teknikerimizle birlikte, dostlarımızın sağlığını bütüncül bir yaklaşımla korumak ve geliştirmektir. Dahiliye alanındaki uzmanlığımızı modern veteriner hekimliği ile birleştirirken, doğu tıbbının önemli yaklaşımlarından akupunktur ve food therapy (beslenme destekli tedavi) yöntemlerinden de faydalanarak her hastaya özel, dengeli ve şefkatli bir tedavi süreci sunmayı amaçlıyoruz.
+                            </p>
+                        </div>
+                        <div class="about-mv-item">
+                            <h4 style="font-family: var(--font-heading); color: var(--primary-dark); font-size: 1.05rem; font-weight: 700; margin-bottom: 6px; display: flex; align-items: center; gap: 8px;">
+                                <span>👁️‍🗨️</span> Vizyonumuz
+                            </h4>
+                            <p class="about-text" style="margin-bottom: 0; font-size: 0.9rem; line-height: 1.7; padding-left: 4px;">
+                                Modern tıp ile doğu tıbbının tamamlayıcı yöntemlerini bir araya getiren; özellikle akupunktur ve beslenme temelli tedavi yaklaşımlarını (food therapy) bilimsel çerçevede uygulayan öncü veteriner kliniklerinden biri olmak. Hasta sahiplerinin güvenle tercih ettiği, etik değerlere bağlı, yenilikçi ve hayvan sağlığında fark yaratan bir merkez haline gelmek en büyük hedefimizdir.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-badges">
+                        <div class="about-badge">
+                            <span class="about-badge-icon">👩‍⚕️</span>
+                            <span>Uzman Kadro</span>
+                        </div>
+                        <div class="about-badge">
+                            <span class="about-badge-icon">📌</span>
+                            <span>Akupunktur Sertifikalı</span>
+                        </div>
+                        <div class="about-badge">
+                            <span class="about-badge-icon">💚</span>
+                            <span>Şefkat Odaklı Yaklaşım</span>
+                        </div>
+                        <div class="about-badge">
+                            <span class="about-badge-icon">📅</span>
+                            <span>7 Gün Açık</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- EKİBİMİZ (TEAM)                        -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="section team" id="ekibimiz">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Ekibimiz</span>
+                <h2 class="section-title">Uzman Ekibimiz</h2>
+                <p class="section-subtitle">Deneyimli ve tutkulu veteriner hekimlerimiz</p>
+                <div class="section-line"></div>
+            </div>
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-card fade-in">
+                    <div class="team-photo-wrapper">
+                        <img src="assets/team-tansu.png" alt="Tansu Karataş - Uzman Veteriner Hekim" loading="lazy" class="team-photo">
+                        <div class="team-photo-overlay">
+                            <a href="https://www.instagram.com/balatcikveteriner" target="_blank" rel="noopener" class="team-social" aria-label="Instagram">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Tansu Karataş</h3>
+                        <span class="team-role">Uzman Veteriner Hekim / Akupunktur Uzmanı</span>
+                        <p class="team-bio">Akupunktur alanında uzmanlaşmış, evcil hayvanların yaşam kalitesini artırmak için alternatif tedavi yöntemlerini uygulayan deneyimli veteriner hekim.</p>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="team-card fade-in">
+                    <div class="team-photo-wrapper">
+                        <img src="assets/team-ece.png" alt="Ece Tenlik - Veteriner Teknikeri" loading="lazy" class="team-photo">
+                        <div class="team-photo-overlay">
+                            <a href="https://www.instagram.com/balatcikveteriner" target="_blank" rel="noopener" class="team-social" aria-label="Instagram">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Ece Tenlik</h3>
+                        <span class="team-role">Veteriner Teknikeri</span>
+                        <p class="team-bio">Hasta bakımından tedavi süreçlerine kadar her aşamada titizlikle görev alan, hayvan sağlığı ve refahını ön planda tutan veteriner teknikeri.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- GALERİ (GALLERY)                        -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="section gallery" id="galeri">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Galeri</span>
+                <h2 class="section-title">Kliniğimizden Kareler</h2>
+                <p class="section-subtitle">Mutlu dostlarımız ve kliniğimizden anlar</p>
+                <div class="section-line"></div>
+            </div>
+                        <div class="gallery-grid">
+                <div class="gallery-item fade-in" data-index="0">
+                    <img src="assets/gallery-1.jpeg" alt="Galeri 1" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="1">
+                    <img src="assets/gallery-2.jpeg" alt="Galeri 2" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="2">
+                    <img src="assets/gallery-3.jpeg" alt="Galeri 3" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="3">
+                    <img src="assets/gallery-4.jpeg" alt="Galeri 4" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="4">
+                    <img src="assets/gallery-5.jpeg" alt="Galeri 5" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="5">
+                    <img src="assets/gallery-6.jpeg" alt="Galeri 6" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="6">
+                    <img src="assets/gallery-7.jpeg" alt="Galeri 7" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="7">
+                    <img src="assets/gallery-8.jpeg" alt="Galeri 8" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="8">
+                    <img src="assets/gallery-9.jpeg" alt="Galeri 9" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="9">
+                    <img src="assets/gallery-10.jpeg" alt="Galeri 10" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="10">
+                    <img src="assets/gallery-11.jpeg" alt="Galeri 11" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="11">
+                    <img src="assets/gallery-12.jpeg" alt="Galeri 12" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="12">
+                    <img src="assets/gallery-13.jpeg" alt="Galeri 13" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="13">
+                    <img src="assets/gallery-14.jpeg" alt="Galeri 14" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="14">
+                    <img src="assets/gallery-15.jpeg" alt="Galeri 15" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="15">
+                    <img src="assets/gallery-16.jpeg" alt="Galeri 16" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="16">
+                    <img src="assets/gallery-17.jpeg" alt="Galeri 17" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="17">
+                    <img src="assets/gallery-18.jpeg" alt="Galeri 18" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="18">
+                    <img src="assets/gallery-19.jpeg" alt="Galeri 19" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="19">
+                    <img src="assets/gallery-20.jpeg" alt="Galeri 20" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="20">
+                    <img src="assets/gallery-21.jpeg" alt="Galeri 21" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="21">
+                    <img src="assets/gallery-22.jpeg" alt="Galeri 22" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="22">
+                    <img src="assets/gallery-23.jpeg" alt="Galeri 23" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="23">
+                    <img src="assets/gallery-24.jpeg" alt="Galeri 24" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="24">
+                    <img src="assets/gallery-25.jpeg" alt="Galeri 25" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="25">
+                    <img src="assets/gallery-26.jpeg" alt="Galeri 26" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="26">
+                    <img src="assets/gallery-27.jpeg" alt="Galeri 27" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="27">
+                    <img src="assets/gallery-28.jpeg" alt="Galeri 28" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-index="28">
+                    <img src="assets/gallery-29.jpeg" alt="Galeri 29" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Kapat">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Önceki">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Sonraki">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="Galeri" id="lightboxImg" class="lightbox-img">
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- SSS (FAQ)                               -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="section faq" id="sss">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">SSS</span>
+                <h2 class="section-title">Sık Sorulan Sorular</h2>
+                <p class="section-subtitle">Merak ettiğiniz soruların cevapları</p>
+                <div class="section-line"></div>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Kliniğiniz hangi saatlerde açık?</span>
+                        <span class="faq-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Pazartesi - Pazar 10:00 - 22:00 saatleri arasında hizmet vermekteyiz.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Randevu almadan gelebilir miyim?</span>
+                        <span class="faq-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Acil durumlar dışında randevu almanızı öneririz. Böylece bekleme süreniz minimuma iner.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Akupunktur tedavisi hangi hayvanlara uygulanır?</span>
+                        <span class="faq-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Akupunktur tedavimiz köpek, kedi ve tavşanlara uygulanabilmektedir. Özellikle kronik ağrı, kas-iskelet problemleri ve yaşlılığa bağlı rahatsızlıklarda etkili sonuçlar alınmaktadır.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Otel hizmetiniz nasıl işliyor?</span>
+                        <span class="faq-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Evcil hayvanlarınız için konforlu ve güvenli bir ortam sağlıyoruz. Günlük beslenme, bakım ve oyun aktiviteleri dahildir.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Hangi ödeme yöntemlerini kabul ediyorsunuz?</span>
+                        <span class="faq-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nakit, kredi kartı ve banka kartı ile ödeme kabul etmekteyiz.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Acil durumlarda ne yapmalıyım?</span>
+                        <span class="faq-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Acil durumlarda 0540 302 31 07 numaralı telefonumuzu arayabilirsiniz. Çalışma saatleri içinde en kısa sürede müdahale ediyoruz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- İLETİŞİM (CONTACT)                     -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="section contact" id="iletisim">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">İletişim</span>
+                <h2 class="section-title">Bize Ulaşın</h2>
+                <p class="section-subtitle">Sorularınız için bize yazın veya arayın</p>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-form-wrapper fade-in">
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="contactName">Ad Soyad</label>
+                            <input type="text" id="contactName" name="name" placeholder="Adınız Soyadınız" required>
+                            <span class="form-error">Lütfen adınızı girin</span>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactEmail">E-posta</label>
+                                <input type="email" id="contactEmail" name="email" placeholder="ornek@mail.com" required>
+                                <span class="form-error">Geçerli bir e-posta girin</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactPhone">Telefon</label>
+                                <input type="tel" id="contactPhone" name="phone" placeholder="05XX XXX XX XX" required>
+                                <span class="form-error">Lütfen telefon numaranızı girin</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Konu</label>
+                            <select id="contactSubject" name="subject" required>
+                                <option value="" disabled selected>Konu seçin</option>
+                                <option value="genel">Genel</option>
+                                <option value="randevu">Randevu</option>
+                                <option value="bilgi">Bilgi</option>
+                            </select>
+                            <span class="form-error">Lütfen bir konu seçin</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Mesaj</label>
+                            <textarea id="contactMessage" name="message" rows="4" placeholder="Mesajınızı yazın..." required></textarea>
+                            <span class="form-error">Lütfen mesajınızı yazın</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-full">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                            Gönder
+                        </button>
+                        <div class="form-success" id="formSuccess">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>Mesajınız başarıyla gönderildi! En kısa sürede sizinle iletişime geçeceğiz.</span>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-info-wrapper fade-in">
+                    <div class="contact-info-cards">
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <h4>Adres</h4>
+                                <p>İzmir, Çiğli - Balatçık</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Telefon</h4>
+                                <a href="tel:+905403023107">0540 302 31 07</a>
+                            </div>
+                        </div>
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div>
+                                <h4>E-posta</h4>
+                                <a href="mailto:balatcikvet@gmail.com">balatcikvet@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <div>
+                                <h4>Çalışma Saatleri</h4>
+                                <p>Pazartesi - Pazar 10:00 - 22:00</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            </div>
+                            <div>
+                                <h4>Instagram</h4>
+                                <a href="https://www.instagram.com/balatcikveteriner" target="_blank" rel="noopener">@balatcikveteriner</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12480.756889961565!2d27.0050!3d38.4950!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd862cfc0c50d%3A0x0!2zQmFsYXTDp8Sxaywgw4dpxJ9saS_EsHptaXI!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str" width="100%" height="220" style="border:0;border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Balatçık Veteriner Kliniği Harita"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- FOOTER                                  -->
+    <!-- ═══════════════════════════════════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo-wrap">
+                        <img src="logo.jpeg" alt="Balatçık Veteriner Logo" class="footer-logo">
+                        <span class="footer-brand-name">Balatçık Veteriner</span>
+                    </div>
+                    <p class="footer-desc">Evcil dostlarınıza şefkat ve uzmanlıkla profesyonel veteriner bakımı sunuyoruz. Akupunktur ve modern tıp bir arada.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.instagram.com/balatcikveteriner" target="_blank" rel="noopener" class="footer-social-link" aria-label="Instagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="https://wa.me/905403023107" target="_blank" rel="noopener" class="footer-social-link" aria-label="WhatsApp">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-col-title">Hızlı Linkler</h4>
+                    <ul class="footer-links">
+                        <li><a href="#anasayfa">Ana Sayfa</a></li>
+                        <li><a href="#hizmetler">Hizmetler</a></li>
+                        <li><a href="#hakkimizda">Hakkımızda</a></li>
+                        <li><a href="#ekibimiz">Ekibimiz</a></li>
+                        <li><a href="#galeri">Galeri</a></li>
+                        <li><a href="#iletisim">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-col-title">Hizmetlerimiz</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hizmetler">Cerrahi Operasyonlar</a></li>
+                        <li><a href="#hizmetler">Dahiliye Uzmanlığı</a></li>
+                        <li><a href="#hizmetler">Laboratuvar Hizmeti</a></li>
+                        <li><a href="#hizmetler">Otel Hizmeti</a></li>
+                        <li><a href="#hizmetler">Pet Kuaför</a></li>
+                        <li><a href="#hizmetler">Akupunktur & Beslenme</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-col-title">İletişim</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            İzmir, Çiğli - Balatçık
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <a href="tel:+905403023107">0540 302 31 07</a>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <a href="mailto:balatcikvet@gmail.com">balatcikvet@gmail.com</a>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            Pzt - Paz 10:00 - 22:00
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Balatçık Veteriner Kliniği. Tüm hakları saklıdır.</p>
+                <p class="footer-credit">Designed by <span class="footer-credit-brand">BulutAI</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- FLOATING ELEMENTS                       -->
+    <!-- ═══════════════════════════════════════ -->
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/905403023107" target="_blank" rel="noopener" class="whatsapp-float" id="whatsappFloat" aria-label="WhatsApp ile ulaşın">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span class="whatsapp-tooltip">WhatsApp ile ulaşın</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Yukarı çık">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- RANDEVU MODAL                           -->
+    <!-- ═══════════════════════════════════════ -->
+    <div class="modal-overlay" id="randevuModal">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal-close" id="modalClose" aria-label="Kapat">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            <div class="modal-header">
+                <div class="modal-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                </div>
+                <h3 id="modalTitle">Online Randevu Al</h3>
+                <p>Formu doldurarak randevu talebinizi iletin</p>
+            </div>
+            <form class="modal-form" id="randevuForm" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="randevuName">Ad Soyad *</label>
+                        <input type="text" id="randevuName" placeholder="Adınız Soyadınız" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="randevuPhone">Telefon *</label>
+                        <input type="tel" id="randevuPhone" placeholder="05XX XXX XX XX" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="randevuEmail">E-posta</label>
+                    <input type="email" id="randevuEmail" placeholder="ornek@mail.com">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="randevuAnimal">Hayvan Türü *</label>
+                        <select id="randevuAnimal" required>
+                            <option value="" disabled selected>Seçiniz</option>
+                            <option value="kopek">Köpek</option>
+                            <option value="kedi">Kedi</option>
+                            <option value="tavsan">Tavşan</option>
+                            <option value="kus">Kuş</option>
+                            <option value="diger">Diğer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="randevuService">Hizmet *</label>
+                        <select id="randevuService" required>
+                            <option value="" disabled selected>Seçiniz</option>
+                            <option value="cerrahi">Cerrahi Operasyonlar</option>
+                            <option value="dahiliye">Dahiliye Uzmanlığı</option>
+                            <option value="lab">Laboratuvar Hizmeti</option>
+                            <option value="otel">Otel Hizmeti</option>
+                            <option value="kuafor">Pet Kuaför</option>
+                            <option value="akupunktur">Akupunktur & Beslenme</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="randevuDate">Tercih Edilen Tarih *</label>
+                        <input type="date" id="randevuDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="randevuTime">Tercih Edilen Saat *</label>
+                        <input type="time" id="randevuTime" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="randevuNote">Not</label>
+                    <textarea id="randevuNote" rows="3" placeholder="Eklemek istediğiniz notlar..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg btn-full">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    Randevu Talebi Gönder
+                </button>
+                <div class="form-success" id="randevuSuccess">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <span>Randevu talebiniz alındı! En kısa sürede sizinle iletişime geçeceğiz.</span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Akupunktur Detail Modal -->
+    <div class="modal-overlay" id="akupunkturModal">
+        <div class="modal modal-lg" role="dialog" aria-modal="true" aria-labelledby="akupunkturTitle">
+            <button class="modal-close" id="akupunkturClose" aria-label="Kapat">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            <div class="modal-header">
+                <div class="modal-icon">📌</div>
+                <h3 id="akupunkturTitle" style="font-family: var(--font-heading); font-weight: 800; color: var(--primary-dark); font-size: 1.5rem; margin-bottom: 6px;">Akupunktur Tedavisi</h3>
+                <p>Veteriner Akupunktur & Beslenme Terapisi Detayları</p>
+            </div>
+            <div class="modal-body text-left" style="margin-top: 20px;">
+                <p style="font-size: 0.95rem; color: var(--text-primary); line-height: 1.7; margin-bottom: 15px;">
+                    <strong>Akupunktur;</strong> veteriner hekimlikte en yaygın olarak kedi ve köpeklerde, ayrıca atlar, kuşlar ve tavşanlar (egzotik hayvanlar) dahil olmak üzere birçok türde uygulanabilen tamamlayıcı bir tedavi yöntemidir.
+                </p>
+                <p style="font-size: 0.95rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 12px;">
+                    Özellikle aşağıdaki hastalıklarda destekleyici olarak kullanılmaktadır:
+                </p>
+                <ul class="akupunktur-detail-list" style="list-style-type: none; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+                    <li style="padding-left: 20px; position: relative; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                        <span style="position: absolute; left: 0; color: var(--primary);">•</span>
+                        <strong style="color: var(--primary-dark);">Kas-iskelet sistemi hastalıkları:</strong> Artrit, osteoartrit, kalça displazisi, kas spazmları, bel ve boyun ağrıları
+                    </li>
+                    <li style="padding-left: 20px; position: relative; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                        <span style="position: absolute; left: 0; color: var(--primary);">•</span>
+                        <strong style="color: var(--primary-dark);">Nörolojik hastalıklar:</strong> Felç, intervertebral disk hastalıkları (fıtık), sinir hasarları, denge ve koordinasyon bozuklukları
+                    </li>
+                    <li style="padding-left: 20px; position: relative; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                        <span style="position: absolute; left: 0; color: var(--primary);">•</span>
+                        <strong style="color: var(--primary-dark);">Kronik ağrı yönetimi:</strong> Yaşlılığa bağlı ağrılar, ameliyat sonrası iyileşme süreci
+                    </li>
+                    <li style="padding-left: 20px; position: relative; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                        <span style="position: absolute; left: 0; color: var(--primary);">•</span>
+                        <strong style="color: var(--primary-dark);">Sindirim sistemi hastalıkları:</strong> Kusma, ishal, kabızlık, iştahsızlık
+                    </li>
+                    <li style="padding-left: 20px; position: relative; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                        <span style="position: absolute; left: 0; color: var(--primary);">•</span>
+                        <strong style="color: var(--primary-dark);">Solunum sistemi hastalıkları:</strong> Astım, bronşit ve diğer solunum yolu problemleri
+                    </li>
+                    <li style="padding-left: 20px; position: relative; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                        <span style="position: absolute; left: 0; color: var(--primary);">•</span>
+                        <strong style="color: var(--primary-dark);">Ürogenital sistem hastalıkları:</strong> İdrar tutamama, bazı mesane ve böbrek rahatsızlıkları
+                    </li>
+                    <li style="padding-left: 20px; position: relative; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                        <span style="position: absolute; left: 0; color: var(--primary);">•</span>
+                        <strong style="color: var(--primary-dark);">Davranışsal problemler:</strong> Stres, anksiyete, agresyon
+                    </li>
+                    <li style="padding-left: 20px; position: relative; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                        <span style="position: absolute; left: 0; color: var(--primary);">•</span>
+                        <strong style="color: var(--primary-dark);">Genel destek amaçlı:</strong> Bağışıklık sisteminin desteklenmesi ve yaşam kalitesinin artırılması
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
