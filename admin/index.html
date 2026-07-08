@@ -1,13 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Balatçık Veteriner - Yönetim Paneli</title>
-  <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
+  <!-- Google Fonts (Outfit & Inter) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Core Tailwind-like variables but in custom admin.css -->
+  <link rel="stylesheet" href="admin.css" />
 </head>
 <body>
-  <!-- Include the script that builds the page and powers Decap CMS -->
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- LOGIN SCREEN (Giriş Ekranı)             -->
+  <!-- ═══════════════════════════════════════ -->
+  <div id="loginScreen" class="login-container">
+    <div class="login-card">
+      <div class="login-header">
+        <img src="../logo.jpeg" alt="Balatçık Veteriner Logo" class="login-logo">
+        <h2>Yönetim Paneli Girişi</h2>
+        <p>Balatçık Veteriner Kliniği İçerik Düzenleme Sistemi</p>
+      </div>
+      <form id="loginForm" class="login-form">
+        <div class="form-group">
+          <label for="adminPassword">Yönetici Giriş Şifresi</label>
+          <input type="password" id="adminPassword" placeholder="Şifrenizi girin..." required>
+        </div>
+        <div id="loginError" class="alert error hidden">Hatalı şifre girdiniz!</div>
+        <button type="submit" class="btn btn-primary btn-block">Giriş Yap</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- DASHBOARD WRAPPER (Ana Panel)          -->
+  <!-- ═══════════════════════════════════════ -->
+  <div id="dashboardWrapper" class="dashboard-container hidden">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <img src="../logo.jpeg" alt="Logo" class="sidebar-logo">
+        <div class="sidebar-title">
+          <h3>Balatçık Vet</h3>
+          <span>Yönetici</span>
+        </div>
+      </div>
+      <nav class="sidebar-menu">
+        <a href="#about" class="menu-item active" data-target="about-section">
+          <span class="icon">🎯</span> Hakkımızda
+        </a>
+        <a href="#services" class="menu-item" data-target="services-section">
+          <span class="icon">🏥</span> Hizmetlerimiz
+        </a>
+        <a href="#team" class="menu-item" data-target="team-section">
+          <span class="icon">🧑‍⚕️</span> Ekibimiz
+        </a>
+        <a href="#gallery" class="menu-item" data-target="gallery-section">
+          <span class="icon">🖼️</span> Galeri Fotoğrafları
+        </a>
+        <a href="#faq" class="menu-item" data-target="faq-section">
+          <span class="icon">❓</span> Sık Sorulan Sorular
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <button id="logoutBtn" class="btn btn-outline btn-block">Çıkış Yap</button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Topbar -->
+      <header class="topbar">
+        <div class="section-title-wrapper">
+          <h2 id="currentSectionTitle">Hakkımızda Metinleri</h2>
+          <p id="currentSectionDesc">Misyon ve vizyon açıklamalarını bu alandan güncelleyebilirsiniz.</p>
+        </div>
+        <div class="topbar-actions">
+          <button id="saveBtn" class="btn btn-primary">
+            <span class="save-icon">💾</span> Değişiklikleri Kaydet
+          </button>
+        </div>
+      </header>
+
+      <!-- Alerts / Status Banners -->
+      <div id="statusAlert" class="alert hidden"></div>
+
+      <!-- Main Scrollable Section Container -->
+      <div class="content-body">
+        
+        <!-- 1. HAKKIMIZDA SECTION -->
+        <section id="about-section" class="content-section">
+          <div class="card">
+            <div class="card-header">
+              <h3>Misyonumuz & Vizyonumuz</h3>
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="aboutMission">Misyonumuz</label>
+                <textarea id="aboutMission" rows="6" placeholder="Klinik misyonunu girin..."></textarea>
+              </div>
+              <div class="form-group">
+                <label for="aboutVision">Vizyonumuz</label>
+                <textarea id="aboutVision" rows="6" placeholder="Klinik vizyonunu girin..."></textarea>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. HİZMETLERİMİZ SECTION -->
+        <section id="services-section" class="content-section hidden">
+          <div class="section-actions-bar">
+            <button id="addServiceBtn" class="btn btn-outline">+ Yeni Hizmet Ekle</button>
+          </div>
+          <div id="servicesList" class="list-wrapper">
+            <!-- Dynamically populated -->
+          </div>
+        </section>
+
+        <!-- 3. EKİBİMİZ SECTION -->
+        <section id="team-section" class="content-section hidden">
+          <div class="section-actions-bar">
+            <button id="addTeamBtn" class="btn btn-outline">+ Yeni Ekip Üyesi Ekle</button>
+          </div>
+          <div id="teamList" class="list-wrapper">
+            <!-- Dynamically populated -->
+          </div>
+        </section>
+
+        <!-- 4. GALERİ FOTOĞRAFLARI SECTION -->
+        <section id="gallery-section" class="content-section hidden">
+          <div class="card">
+            <div class="card-header">
+              <h3>Yeni Fotoğraf Ekle</h3>
+            </div>
+            <div class="card-body">
+              <div class="upload-zone" id="uploadZone">
+                <input type="file" id="galleryFileInput" accept="image/*" class="hidden-file-input">
+                <div class="upload-prompt">
+                  <span class="upload-icon">📤</span>
+                  <p>Dosya seçmek için tıklayın veya resmi sürükleyip bırakın</p>
+                  <span>Maksimum 5MB (JPEG, PNG)</span>
+                </div>
+              </div>
+              <div id="uploadProgress" class="progress-bar-wrapper hidden">
+                <div class="progress-bar">Yükleniyor... Lütfen bekleyin.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mt-4">
+            <div class="card-header">
+              <h3>Mevcut Fotoğraflar (<span id="galleryCount">0</span>)</h3>
+            </div>
+            <div class="card-body">
+              <div id="galleryGrid" class="admin-gallery-grid">
+                <!-- Dynamically populated -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 5. SSS SECTION -->
+        <section id="faq-section" class="content-section hidden">
+          <div class="section-actions-bar">
+            <button id="addFaqBtn" class="btn btn-outline">+ Yeni Soru Ekle</button>
+          </div>
+          <div id="faqList" class="list-wrapper">
+            <!-- Dynamically populated -->
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="admin.js"></script>
 </body>
 </html>
