@@ -545,7 +545,7 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.disabled = true;
             submitBtn.innerHTML = 'Gönderiliyor...';
 
-            fetch('https://formsubmit.co/ajax/balatcikvet@gmail.com', {
+            fetch('https://formsubmit.co/ajax/a1de5a5e8d095998e849ddeb91696f10', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -630,7 +630,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const subjectEl = document.getElementById('contactSubject');
             const messageEl = document.getElementById('contactMessage');
 
-            fetch('https://formsubmit.co/ajax/balatcikvet@gmail.com', {
+            fetch('https://formsubmit.co/ajax/a1de5a5e8d095998e849ddeb91696f10', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
