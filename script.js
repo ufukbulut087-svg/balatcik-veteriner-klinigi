@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         e.preventDefault();
                         const akupunkturModal = document.getElementById('akupunkturModal');
                         if (akupunkturModal) {
-                            akupunkturModal.classList.add('visible');
+                            akupunkturModal.classList.add('active');
                             document.body.style.overflow = 'hidden';
                         }
                     });
