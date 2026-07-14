@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="service-icon">${iconSvg}</div>
                         <h3 class="service-title">${service.title}</h3>
                         <p class="service-desc">${service.description}</p>
-                        <a href="${service.detailsLink || '#iletisim'}" class="service-link" ${service.detailsLink === '#akupunkturModal' ? 'id="akupunkturDetayBtn"' : ''}>
+                        <a href="${service.detailsLink || '#iletisim'}" class="service-link">
                             Detay
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                         </a>
@@ -229,18 +229,21 @@ document.addEventListener('DOMContentLoaded', () => {
                     servicesGrid.appendChild(card);
                 });
                 
-                // Re-bind acupuncture modal button
-                const akupunkturBtn = document.getElementById('akupunkturDetayBtn');
-                if (akupunkturBtn) {
-                    akupunkturBtn.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        const akupunkturModal = document.getElementById('akupunkturModal');
-                        if (akupunkturModal) {
-                            akupunkturModal.classList.add('active');
-                            document.body.style.overflow = 'hidden';
-                        }
-                    });
-                }
+                // Re-bind all dynamic modal buttons
+                const serviceLinks = servicesGrid.querySelectorAll('.service-link');
+                serviceLinks.forEach(link => {
+                    const targetHash = link.getAttribute('href');
+                    if (targetHash && targetHash.startsWith('#') && targetHash !== '#iletisim') {
+                        link.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            const targetModal = document.querySelector(targetHash);
+                            if (targetModal) {
+                                targetModal.classList.add('active');
+                                document.body.style.overflow = 'hidden';
+                            }
+                        });
+                    }
+                });
                 observeNewElements();
             })
             .catch(err => console.warn('Using static services:', err.message));
@@ -489,28 +492,40 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target === randevuModal) closeModal();
     });
 
-    // Akupunktur Modal
-    const akupunkturModal = document.getElementById('akupunkturModal');
-    const akupunkturDetayBtn = document.getElementById('akupunkturDetayBtn');
-    const akupunkturClose = document.getElementById('akupunkturClose');
-
-    if (akupunkturDetayBtn && akupunkturModal && akupunkturClose) {
-        akupunkturDetayBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            akupunkturModal.classList.add('active');
-            document.body.style.overflow = 'hidden';
+    // Generic Detail Modals Handlers (For all services details)
+    document.querySelectorAll('.modal-close').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const modal = btn.closest('.modal-overlay');
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
         });
+    });
 
-        const closeAkupunkturModal = () => {
-            akupunkturModal.classList.remove('active');
-            document.body.style.overflow = '';
-        };
-
-        akupunkturClose.addEventListener('click', closeAkupunkturModal);
-        akupunkturModal.addEventListener('click', (e) => {
-            if (e.target === akupunkturModal) closeAkupunkturModal();
+    document.querySelectorAll('.modal-overlay').forEach(modal => {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
         });
-    }
+    });
+
+    // Global binder for service detail links (in case of static HTML fallback)
+    document.querySelectorAll('.service-link').forEach(link => {
+        const targetHash = link.getAttribute('href');
+        if (targetHash && targetHash.startsWith('#') && targetHash !== '#iletisim') {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetModal = document.querySelector(targetHash);
+                if (targetModal) {
+                    targetModal.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+        }
+    });
 
     // Randevu form submit
     const randevuForm = document.getElementById('randevuForm');

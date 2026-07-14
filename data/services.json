@@ -3,31 +3,36 @@
     "id": "surgery",
     "icon": "surgery",
     "title": "Cerrahi Operasyonlar",
-    "description": "Deneyimli ekibimizle güvenli cerrahi müdahaleler"
+    "description": "Deneyimli ekibimizle güvenli cerrahi müdahaleler",
+    "detailsLink": "#surgeryModal"
   },
   {
     "id": "internal",
     "icon": "internal",
     "title": "Dahiliye Uzmanlığı",
-    "description": "İç hastalıkların teşhis ve tedavisi"
+    "description": "İç hastalıkların teşhis ve tedavisi",
+    "detailsLink": "#internalModal"
   },
   {
     "id": "laboratory",
     "icon": "laboratory",
     "title": "Laboratuvar Hizmeti",
-    "description": "Kapsamlı kan tahlili ve tanı testleri"
+    "description": "Kapsamlı kan tahlili ve tanı testleri",
+    "detailsLink": "#laboratoryModal"
   },
   {
     "id": "hotel",
     "icon": "hotel",
     "title": "Otel Hizmeti",
-    "description": "Konforlu ve güvenli evcil hayvan oteli"
+    "description": "Konforlu ve güvenli evcil hayvan oteli",
+    "detailsLink": "#hotelModal"
   },
   {
     "id": "haircut",
     "icon": "haircut",
     "title": "Pet Kuaför",
-    "description": "Profesyonel bakım ve tıraş hizmetleri"
+    "description": "Profesyonel bakım ve tıraş hizmetleri",
+    "detailsLink": "#haircutModal"
   },
   {
     "id": "acupuncture",
